@@ -5,7 +5,7 @@
 // 👇 CAMBIA ESTA URL POR LA URL DE TU CANCIÓN
 export const MUSIC_CONFIG = {
   // URL de tu canción
-  songUrl: 'https://www.dropbox.com/scl/fi/lqiue38n9s69rjzmc9sic/Bruno-Mars-Marry-You-Official-Lyric-Video.mp3?rlkey=iz1y3b0vtjw1x53t4clrkx3pu&e=1&st=8gkz5mc3&dl=1',
+  songUrl: 'https://res.cloudinary.com/dzsvvhdcv/video/upload/v1760713894/memo_hari/Bruno_Mars_-_Marry_You_Official_Lyric_Video_-_Bruno_Mars_xmp4rf.mp3',
   
   // Título de la canción (opcional)
   songTitle: 'Nuestra canción',
