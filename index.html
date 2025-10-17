@@ -135,35 +135,31 @@
 
                 <!-- Timeline -->
                 <div class="relative max-w-3xl mx-auto">
-                    <!-- Línea vertical -->
-                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-accent/30 hidden md:block"></div>
+                    <!-- Línea vertical (visible en mobile y desktop) -->
+                    <div class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-accent/30"></div>
                     
                     <!-- Evento 1: Discurso de Bodas -->
-                    <div class="relative mb-16 md:mb-24">
-                        <div class="flex flex-col md:flex-row items-center gap-8">
-                            <!-- Hora (izquierda en desktop) -->
-                            <div class="md:w-1/2 md:text-right md:pr-12">
-                                <div class="inline-block md:block">
-                                    <div class="flex items-center gap-3 md:justify-end mb-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="w-6 h-6 text-accent">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polyline points="12 6 12 12 16 14"></polyline>
-                                        </svg>
-                                        <p class="text-3xl md:text-4xl font-bold text-accent">3:00 PM</p>
-                                    </div>
-                                </div>
+                    <div class="relative mb-12 md:mb-24">
+                        <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
+                            <!-- Hora (mobile: arriba, desktop: right side) -->
+                            <div class="w-full md:w-1/2 md:pr-12 order-1 flex items-center gap-3 pl-20 md:pl-0 md:justify-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="w-6 h-6 text-accent flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <p class="text-3xl md:text-4xl font-bold text-accent">3:00 PM</p>
                             </div>
                             
                             <!-- Punto central -->
-                            <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
-                                <div class="w-6 h-6 rounded-full bg-accent border-4 border-background shadow-lg"></div>
+                            <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 top-6 md:top-auto">
+                                <div class="w-4 h-4 md:w-6 md:h-6 rounded-full bg-accent border-2 md:border-4 border-background shadow-lg"></div>
                             </div>
                             
-                            <!-- Detalles del evento (derecha en desktop) -->
-                            <div class="md:w-1/2 md:pl-12">
-                                <div class="bg-card rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow">
+                            <!-- Detalles del evento (right side on desktop) -->
+                            <div class="w-full md:w-1/2 md:pl-12 order-2 pl-20 md:pl-12 pr-4 md:pr-0">
+                                <div class="bg-card rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow w-full">
                                     <div class="flex items-start gap-4 mb-4">
                                         <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -173,7 +169,7 @@
                                             </svg>
                                         </div>
                                         <div class="flex-1">
-                                            <h4 class="font-serif text-2xl text-foreground mb-2">Discurso de Boda</h4>
+                                            <h4 class="font-serif text-xl md:text-2xl text-foreground mb-2">Discurso de Boda</h4>
                                         </div>
                                     </div>
                                     <div class="space-y-3">
@@ -208,10 +204,10 @@
 
                     <!-- Evento 2: Recepción -->
                     <div class="relative">
-                        <div class="flex flex-col md:flex-row items-center gap-8">
-                            <!-- Detalles del evento (izquierda en desktop) -->
-                            <div class="md:w-1/2 md:pr-12 order-2 md:order-1">
-                                <div class="bg-card rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
+                            <!-- Detalles del evento (left side on desktop) -->
+                            <div class="w-full md:w-1/2 md:pr-12 order-2 md:order-1 pl-20 md:pl-0 pr-4 md:pr-12">
+                                <div class="bg-card rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow w-full">
                                     <div class="flex items-start gap-4 mb-4">
                                         <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
                                             <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +219,7 @@
                                               </svg>
                                         </div>
                                         <div class="flex-1">
-                                            <h4 class="font-serif text-2xl text-foreground mb-2">Recepción</h4>
+                                            <h4 class="font-serif text-xl md:text-2xl text-foreground mb-2">Recepción</h4>
                                             <p class="text-sm text-muted-foreground mb-3">Celebración y festejo</p>
                                         </div>
                                     </div>
@@ -256,23 +252,19 @@
                             </div>
                             
                             <!-- Punto central -->
-                            <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
-                                <div class="w-6 h-6 rounded-full bg-accent border-4 border-background shadow-lg"></div>
+                            <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 top-6 md:top-auto">
+                                <div class="w-4 h-4 md:w-6 md:h-6 rounded-full bg-accent border-2 md:border-4 border-background shadow-lg"></div>
                             </div>
                             
-                            <!-- Hora (derecha en desktop) -->
-                            <div class="md:w-1/2 md:pl-12 order-1 md:order-2">
-                                <div class="inline-block md:block">
-                                    <div class="flex items-center gap-3 mb-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="w-6 h-6 text-accent">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polyline points="12 6 12 12 16 14"></polyline>
-                                        </svg>
-                                        <p class="text-3xl md:text-4xl font-bold text-accent">5:00 PM</p>
-                                    </div>
-                                </div>
+                            <!-- Hora (mobile: arriba, desktop: right side) -->
+                            <div class="w-full md:w-1/2 md:pl-12 order-1 md:order-2 flex items-center gap-3 pl-20 md:pl-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="w-6 h-6 text-accent flex-shrink-0">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <p class="text-3xl md:text-4xl font-bold text-accent">5:00 PM</p>
                             </div>
                         </div>
                     </div>
